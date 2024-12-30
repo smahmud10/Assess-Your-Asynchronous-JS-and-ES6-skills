@@ -20,10 +20,10 @@
 <body>
 	<!-- Navbar -->
 
-	<nav class="w-10/12 mx-auto flex justify-between items-center py-2 ">
+	<nav class="flex items-center justify-between w-10/12 py-2 mx-auto ">
 		<div class="flex items-center gap-2">
 			<img class="w-4 h-4" src="./images/logo.webp" alt="">
-			<h5 class="font-bold text-2xl">Peddy</h5>
+			<h5 class="text-2xl font-bold">Peddy</h5>
 		</div>
 		<div>
 			<ul class="flex gap-5 font-normal text-gray-600">
@@ -33,44 +33,46 @@
 			</ul>
 		</div>
 		<div class="border px-2.5 py-1.5 rounded-full">
-			<p><i class="fa-regular fa-user text-base lg:text-2xl "></i> </p>
+			<p><i class="text-base fa-regular fa-user lg:text-2xl "></i> </p>
 		</div>
 	</nav>
 	<!-- header section start -->
 
-	<header class="flex flex-col justify-center items-center w-10/12 mx-auto gap-10 py-10">
+	<header class="flex flex-col items-center justify-center w-10/12 gap-10 py-10 mx-auto">
 		<div class="w-7/12 text-center">
-			<h5 class="lg:text-2xl text-base">Bringing Families Together ❤️‍🔥
+			<h5 class="text-base lg:text-2xl">Bringing Families Together ❤️‍🔥
 			</h5>
-			<h2 class="text-3xl lg:text-5xl font-bold">Your Path to Adoption Starts Here</h2>
+			<h2 class="text-3xl font-bold lg:text-5xl">Your Path to Adoption Starts Here</h2>
 			<p class="py-5 text-xs lg:text-sm">It is a long established fact that a reader will be distracted by the
 				readable content of a page when
 				looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
-			<button class="bg-[#0E7A81] px-6 py-2 rounded-md text-white text-xs">
+			<a href="#main"><button class="bg-[#0E7A81] px-6 py-2 rounded-md text-white text-xs">
 				View More
-			</button>
+			</button></a>
 		</div>
-		<div class="lg:w-96 w-64">
-			<img class="h-full w-full" src="./images/pet.webp" alt="">
+		<div class="w-64 lg:w-96">
+			<img class="w-full h-full" src="./images/pet.webp" alt="">
 		</div>
 	</header>
 	<!-- header section end -->
 
 	<!-- main section  start-->
 
-	<main class="w-10/12 mx-auto">
-		<div class=" ">
-			<div class="text-center w-7/12 mx-auto">
-				<h1 class="lg:text-3xl font-bold">
+	<main class="w-10/12 mx-auto" id="main">
+		<div class="">
+			<div class="w-7/12 mx-auto text-center">
+				<h1 class="font-bold lg:text-3xl">
 					Adopt Your Best Friend
 				</h1>
-				<p class="text-xs py-5">
-					It is a long established fact that a reader will be distracted by the readable content of a page when
+				<p class="py-5 text-xs">
+					It is a long established fact that a reader will be distracted by the readable content of a page
+					when
 					looking at its layout. The point of using Lorem Ipsum is that it has a.
 				</p>
 			</div>
-			<div>
-				<button></button>
+			<!-- Show Button -->
+			<div class="flex justify-center gap-24 " id="pet-btn">
+
 			</div>
 		</div>
 		<div class="flex justify-between py-5">
@@ -80,6 +82,21 @@
 			<button class="bg-[#0E7A81] px-6 py-2 rounded-md text-white text-xs">
 				Short by Price
 			</button>
+			 <!-- Cards Container starts here-->
+
+			 <div class="grid gap-6 fetch-data-container lg:grid-cols-4">
+
+				<div class="grid items-center grid-cols-1 col-span-3 gap-6 mt-10 md:grid-cols-3 lg:grid-cols-4" id="cardContainer">
+
+				</div>
+
+				<div class="p-4 border rounded-lg pet-thumbnail">
+					 <div class="grid items-center justify-center grid-cols-2 gap-5 pet-image-controller" id="likedPetContainer">
+
+					 </div>
+				</div>
+
+		  </div>
 		</div>
 	</main>
 
@@ -87,34 +104,54 @@
 
 
 	<!-- footer end -->
-	<footer class="bg-black h-60">
-		          <div>
-					<div class="flex items-center gap-2">
-						<img class="w-4 h-4" src="./images/logo.webp" alt="">
-						<h5 class="font-bold text-2xl">Peddy</h5>
-					</div>
-					<div>
-						<p>Location: av. Washington 165, NY CA </p>
-						<p>54003
-						</p>
-						<p>Phone: +31 85 964 47 25
-						</p>
-						<p>Email: info@yourdomain.com
-						</p>
-						<p>Openings hours: 9.00 AM - 5.00 PM</p>
-					</div>
-					<div>
-						<a>https://img.icons8.com/?size=100&id=118497&format=png&color=000000</a><a href="">https://img.icons8.com/?size=100&id=19318&format=png&color=000000</a><a href="">https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000</a><a href="">https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000</a>
-					</div>
-				  </div>
+	<footer class="bg-black lg:h-60 ">
+		<div class="flex justify-between w-10/12 py-5 mx-auto">
+			<div  class="flex flex-col text-white">
+				<div class="flex items-center gap-2">
+					<img class="w-4 h-4" src="./images/logo.webp" alt="">
+					<h5 class="text-2xl font-bold">Peddy</h5>
+				</div>
+				<div class="text-xs">
+					<p class="lg:py-1">Location: av. Washington 165, NY CA </p>
+					<p class="lg:py-1">54003
+					</p>
+					<p class="lg:py-1">Phone: +31 85 964 47 25
+					</p>
+					<p class="lg:py-1">Email: info@yourdomain.com
+					</p>
+					<p class="lg:py-1">Openings hours: 9.00 AM - 5.00 PM</p>
+				</div>
+				<div class="flex w-6 gap-2 py-2">
+					<img src="./images/facebook.png" alt="">
+					<img src="./images/youtube.png" alt="">
+					<img src="./images/x-48.png" alt="">
+					<img src="./images/instagram.png" alt="">
+				</div>
+			</div>
 
 
 
-				  <div></div>
-				  <div></div>
+			<div>
+				<p class="text-white">Useful links</p>
+				<ul class="py-2 text-xs text-gray-600">
+					<li>Home</li>
+					<li>About Us</li>
+					<li> Animals</li>
+					<li>Foundation</li>
+					<li>Contact</li>
+				</ul>
+			</div>
+			<div class="flex flex-col gap-5 text-white">
+				<p class="">Drop a Massage</p>
+				<input class="text-center rounded-md opacity-70" type="email" placeholder="Enter Your e-mail">
+				<button class="bg-[#0E7A81] px-6 py-2 rounded-md text-xs">
+					Subscribe
+				</button>
+			</div>
+		</div>
 	</footer>
 	<!-- main section  end-->
-<script src="index.js"></script>
+	<script src="index.js"></script>
 </body>
 
 </html>
