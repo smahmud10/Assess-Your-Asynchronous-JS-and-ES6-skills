@@ -71,7 +71,7 @@
 					looking at its layout. The point of using Lorem Ipsum is that it has a.
 				</p>
 			</div>
-			<!-- Show Button -->
+			<!-- Show Dynamic Button -->
 			<div class="flex justify-around " id="pet-btn">
 
 			</div>
@@ -89,12 +89,14 @@
 		<!-- Show card -->
 
 <!-- here we showed our spinner -->
-<div id="spinner">
+<div class="spinner" id="spinner">
 
 </div>
-		<!-- Cards Container starts here-->
+	</main>
 
-		<section class="grid gap-6 fetch-data-container lg:grid-cols-4 ">
+	<!-- Cards Container starts here-->
+
+		<section class="grid gap-6 ms-16 fetch-data-container lg:grid-cols-4 ">
 
 
 			<div class="grid items-center grid-cols-1 col-span-3 gap-6 mt-10 md:grid-cols-3 lg:grid-cols-4"
@@ -102,7 +104,7 @@
 
 			</div>
 
-			<div class="p-4 border rounded-lg pet-thumbnail">
+			<div class="p-4 border rounded-lg border-stone-400 pet-thumbnail">
 				<div class="grid items-center justify-center grid-cols-2 gap-5 pet-image-controller" id="likedPetContainer">
 
 
@@ -110,9 +112,18 @@
 				</div>
 			</div>
 
-		</section>
+			<!-- Modal section start -->
+			<button class="hidden btn" onclick="mymodal.showModal()">open modal</button>
+			<dialog id="mymodal" class="modal">
+			  <div id="box" class="modal-box">
 
-	</main>
+
+			  </div>
+			</dialog>
+
+			<!-- Modal section end-- -->
+
+		</section>
 
 	<!-- footer start -->
 
